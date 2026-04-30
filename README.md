@@ -6,9 +6,9 @@ The newsletter ships as HTML email; its illustrations (PNG, GIF, JPEG) live here
 
 ## Serving
 
-Files are served via GitHub Pages under the custom domain **`assets.getanyshift.com`** (CNAME pinned at the repo root). Pages source: branch `main`, root directory; HTTPS auto-provisioned via Let's Encrypt.
+Files are served via GitHub Pages under the custom domain **`newsletter.getanyshift.com`** (CNAME pinned at the repo root). Pages source: branch `main`, root directory; HTTPS auto-provisioned via Let's Encrypt.
 
-DNS: `assets.getanyshift.com  CNAME  anyshift-engineering.github.io.`
+DNS: `newsletter.getanyshift.com  CNAME  anyshift-engineering.github.io.`
 
 We use Pages rather than `raw.githubusercontent.com` so the asset host matches the newsletter sender domain (better Gmail-image-proxy behavior on iOS) and so cache invalidations flow through Fastly's tighter TTLs. Same-name file replacements still hit CDN cache; rename when swapping.
 
@@ -28,7 +28,7 @@ One folder per edition, named after the edition's closing date:
 Each file is reachable at:
 
 ```
-https://assets.getanyshift.com/<last_day>/<filename>
+https://newsletter.getanyshift.com/<last_day>/<filename>
 ```
 
 ## Subscribe
